@@ -7,16 +7,9 @@ import { pullRight, h1 } from './Layout.css';
 const Layout = ({ children }) => {
   return (
     <Container textAlign={"right"}>
-      <Link to="/">
-        <Header as="h1" className={h1}>
-          Github Pages
-        </Header>
-      </Link>
+      <Divider />      
       {children}
       <Divider />
-      <p className={pullRight}>
-        Made with <Icon name="heart" color="red" />
-      </p>
     </Container>
   );
 };

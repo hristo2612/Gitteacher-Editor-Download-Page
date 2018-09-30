@@ -2,8 +2,8 @@
   "name": "gitteacher-editor-download-page",
   "version": "1.0.1",
   "main": "index.js",
-  "homepage": "https://hristo2612.github.io/gitteacher-editor-download-page/",
-  "repository": "https://github.com/hristo2612/gitteacher-editor-download-page.git",
+  "homepage": "https://hristo2612.github.io/Gitteacher-Editor-Download-Page/",
+  "repository": "https://github.com/hristo2612/Gitteacher-Editor-Download-Page.git",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --env.env=dev --hot",
@@ -11,7 +11,7 @@
     "prebuild": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack -p --env.env=prod",
     "build:bundleanalyzer": "npm run build --env.addons=bundleanalyzer",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp ./executable/* ./build/",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
